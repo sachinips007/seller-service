@@ -79,6 +79,12 @@ public ResponseEntity<String> delete_seller(@RequestParam int id) {
  }
 @RequestMapping("/deletee")
  public ResponseEntity<String> deleteByEmail(@RequestParam String email) {
-	 return sellerservice.deleteByEmail(email);
+	 return sellerservice.deleteByEmail(email);}
+	 
+	 //
+	 @RequestMapping("/deleteem")
+	 public ResponseEntity<String> deleteByemail(@RequestParam String email) {
+		 //return sellerservice.deleteByEmail(email);
+		 return null;
  }
 }
